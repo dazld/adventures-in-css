@@ -1,7 +1,7 @@
 adventures-in-css
 =================
 ```css
-\#adventures { 
+#adventures { 
   font-weight:bold; 
   color:hotpink; 
 }
