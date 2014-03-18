@@ -6,3 +6,11 @@ adventures-in-css
   color:hotpink; 
 }
 ```
+
+to run:
+
+```
+npm install
+npm run-script server
+
+```

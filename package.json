@@ -1,0 +1,25 @@
+{
+  "name": "adventures-in-css",
+  "version": "0.0.0",
+  "description": "adventures-in-css ================= ```css #adventures {    font-weight:bold;    color:hotpink;  } ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dazld/adventures-in-css.git"
+  },
+  "scripts":{
+    "server":"node node_modules/http-server/bin/http-server"  
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dazld/adventures-in-css/issues"
+  },
+  "homepage": "https://github.com/dazld/adventures-in-css",
+  "dependencies": {
+    "http-server": "~0.6.1"
+  }
+}
