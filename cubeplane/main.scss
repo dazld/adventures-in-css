@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    perspective: 1000px;
+}
+
+.container {
+  width: 512px;
+  height: 512px;
+  margin: 0 auto;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateX(66deg) rotateZ(45deg);
+  animation: rot linear alternate infinite 4s;
+}
+
+.square {
+  perspective: 1000px;
+  border: 1px solid black;
+  float: left;
+  width: 64px;
+  height: 64px;
+  line-height: 16px;
+  font-size: 6px;
+  text-align: center;
+}
+
+$columns: 8;
+
+@for $i from 1 through 64 {
+  .square:nth-child(#{$i}) {
+    transform: translateZ((sin($i * 0.1) * 10px));
+  }
+}
+
+
+@keyframes rot {
+  0% {
+      transform: rotateX(66deg) rotateZ(45deg) rotateY(0deg);
+  }
+  50% {
+      transform: rotateX(66deg) rotateZ(65deg) rotateY(30deg);
+  }
+  100% {
+      transform: rotateX(66deg) rotateZ(45deg);
+  }
+}

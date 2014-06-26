@@ -1,0 +1,54 @@
+@import url(/lib/reset.css);
+
+/*
+
+	#00667f
+	#00a0ba
+	#0051ba
+	#ffcc49
+	#af7505
+	#e8112d
+*/
+
+* {
+	box-sizing: border-box;
+}
+html {
+	min-height: 100%;
+	xbackground: linear-gradient(#0051ba,#003f87);
+}
+
+#pos {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -15em;
+	margin-top: -15em;
+}
+
+.arcs {
+	width: 30rem;
+	height: 30rem;
+	
+	background: -webkit-linear-gradient(#00667f 0%, 	#00667f 16.7%, 
+										#00a0ba 16.7%, 	#00a0ba 33.34%, 
+										#0051ba 33.34%, #0051ba 50%,
+										#ffcc49 50%, 	#ffcc49 66.67%,
+										#af7505 66.67%, #af7505 83.38%,
+										#e8112d 83.38%, #e8112d 100%);
+	
+	
+	xanimation: bgcycle 1s infinite linear alternate;
+}
+
+@keyframes bgcycle {
+	from {
+		
+		transform: rotateY(0deg);
+	}
+
+	to {
+		
+		transform: rotateY(720deg);	
+	}
+}

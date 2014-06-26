@@ -1,0 +1,82 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    perspective: 12000px;
+}
+
+.container {
+  width: 512px;
+  height: 512px;
+  margin: 0 auto;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateX(66deg) rotateZ(45deg);
+  animation: rot2 ease-in-out alternate infinite 4s;
+}
+
+.square {
+  perspective: 1000px;
+  border: 1px solid black;
+  float: left;
+  width: 64px;
+  height: 64px;
+  line-height: 16px;
+  font-size: 6px;
+  text-align: center;
+}
+
+$columns: 8;
+
+@for $i from 1 through 64 {
+  .square:nth-child(#{$i}) {
+    animation: anim#{$i} linear alternate infinite 2s;
+  }
+}
+
+@for $i from 1 through 64 {
+  @keyframes anim#{$i} {
+  	from {
+  		width: 1px;
+  		height: 1px;
+  		background-color: rgba(128,($i * 2), 128,0.4);
+  		xborder-color: transparent;
+  		transform: translateZ((sin($i * 0.2) * 100px));		
+  	}
+  	to {
+  		width: 100px;
+  		height: 100px;
+  		background-color: rgba(($i * 2), 128, 128,0.4);
+  		xborder-color: #333;
+  		transform: translateZ((cos($i * 0.2) * 100px));
+  	}
+  }
+}
+
+@keyframes rot2 {
+  0% {
+      transform: rotateX(45deg) rotateZ(-30deg);
+  }
+  100% {
+      transform: rotateX(45deg) rotateZ(30deg);
+  }
+}
+
+@keyframes rot {
+  0% {
+      transform: rotateZ(45deg) rotateY(0deg);
+  }
+  50% {
+      transform: rotateZ(65deg) rotateY(30deg);
+  }
+  100% {
+      transform: rotateZ(45deg);
+  }
+}

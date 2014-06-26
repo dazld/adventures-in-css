@@ -1,0 +1,1729 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/screen.scss */
+body {
+  perspective: 12000px;
+}
+
+/* line 16, ../sass/screen.scss */
+.container {
+  width: 512px;
+  height: 512px;
+  margin: 0 auto;
+  -webkit-transform-style: preserve-3d;
+  transform: rotateX(66deg) rotateZ(45deg);
+  animation: rot2 ease-in-out alternate infinite 4s;
+}
+
+/* line 25, ../sass/screen.scss */
+.square {
+  perspective: 1000px;
+  border: 1px solid black;
+  float: left;
+  width: 64px;
+  height: 64px;
+  line-height: 16px;
+  font-size: 6px;
+  text-align: center;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(1) {
+  animation: anim1 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(2) {
+  animation: anim2 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(3) {
+  animation: anim3 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(4) {
+  animation: anim4 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(5) {
+  animation: anim5 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(6) {
+  animation: anim6 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(7) {
+  animation: anim7 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(8) {
+  animation: anim8 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(9) {
+  animation: anim9 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(10) {
+  animation: anim10 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(11) {
+  animation: anim11 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(12) {
+  animation: anim12 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(13) {
+  animation: anim13 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(14) {
+  animation: anim14 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(15) {
+  animation: anim15 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(16) {
+  animation: anim16 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(17) {
+  animation: anim17 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(18) {
+  animation: anim18 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(19) {
+  animation: anim19 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(20) {
+  animation: anim20 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(21) {
+  animation: anim21 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(22) {
+  animation: anim22 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(23) {
+  animation: anim23 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(24) {
+  animation: anim24 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(25) {
+  animation: anim25 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(26) {
+  animation: anim26 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(27) {
+  animation: anim27 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(28) {
+  animation: anim28 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(29) {
+  animation: anim29 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(30) {
+  animation: anim30 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(31) {
+  animation: anim31 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(32) {
+  animation: anim32 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(33) {
+  animation: anim33 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(34) {
+  animation: anim34 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(35) {
+  animation: anim35 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(36) {
+  animation: anim36 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(37) {
+  animation: anim37 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(38) {
+  animation: anim38 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(39) {
+  animation: anim39 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(40) {
+  animation: anim40 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(41) {
+  animation: anim41 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(42) {
+  animation: anim42 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(43) {
+  animation: anim43 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(44) {
+  animation: anim44 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(45) {
+  animation: anim45 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(46) {
+  animation: anim46 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(47) {
+  animation: anim47 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(48) {
+  animation: anim48 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(49) {
+  animation: anim49 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(50) {
+  animation: anim50 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(51) {
+  animation: anim51 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(52) {
+  animation: anim52 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(53) {
+  animation: anim53 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(54) {
+  animation: anim54 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(55) {
+  animation: anim55 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(56) {
+  animation: anim56 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(57) {
+  animation: anim57 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(58) {
+  animation: anim58 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(59) {
+  animation: anim59 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(60) {
+  animation: anim60 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(61) {
+  animation: anim61 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(62) {
+  animation: anim62 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(63) {
+  animation: anim63 linear alternate infinite 2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.square:nth-child(64) {
+  animation: anim64 linear alternate infinite 2s;
+}
+
+@keyframes anim1 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 2, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(19.86693px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(2, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(98.00666px);
+  }
+}
+
+@keyframes anim2 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 4, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(38.94183px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(4, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(92.1061px);
+  }
+}
+
+@keyframes anim3 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 6, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(56.46425px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(6, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(82.53356px);
+  }
+}
+
+@keyframes anim4 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 8, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(71.73561px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(8, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(69.67067px);
+  }
+}
+
+@keyframes anim5 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 10, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(84.1471px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(10, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(54.03023px);
+  }
+}
+
+@keyframes anim6 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 12, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(93.20391px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(12, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(36.23578px);
+  }
+}
+
+@keyframes anim7 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 14, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(98.54497px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(14, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(16.99671px);
+  }
+}
+
+@keyframes anim8 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 16, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(99.95736px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(16, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-2.91995px);
+  }
+}
+
+@keyframes anim9 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 18, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(97.38476px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(18, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-22.72021px);
+  }
+}
+
+@keyframes anim10 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 20, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(90.92974px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(20, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-41.61468px);
+  }
+}
+
+@keyframes anim11 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 22, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(80.84964px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(22, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-58.85011px);
+  }
+}
+
+@keyframes anim12 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 24, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(67.54632px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(24, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-73.73937px);
+  }
+}
+
+@keyframes anim13 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 26, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(51.55014px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(26, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-85.68888px);
+  }
+}
+
+@keyframes anim14 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 28, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(33.49882px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(28, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-94.22223px);
+  }
+}
+
+@keyframes anim15 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 30, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(14.112px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(30, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-98.99925px);
+  }
+}
+
+@keyframes anim16 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 32, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-5.83741px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(32, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-99.82948px);
+  }
+}
+
+@keyframes anim17 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 34, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-25.55411px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(34, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-96.67982px);
+  }
+}
+
+@keyframes anim18 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 36, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-44.25204px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(36, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-89.67584px);
+  }
+}
+
+@keyframes anim19 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 38, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-61.18579px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(38, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-79.09677px);
+  }
+}
+
+@keyframes anim20 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 40, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-75.68025px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(40, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-65.36436px);
+  }
+}
+
+@keyframes anim21 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 42, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-87.15758px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(42, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-49.02608px);
+  }
+}
+
+@keyframes anim22 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 44, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-95.16021px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(44, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-30.73329px);
+  }
+}
+
+@keyframes anim23 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 46, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-99.3691px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(46, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-11.21525px);
+  }
+}
+
+@keyframes anim24 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 48, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-99.61646px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(48, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(8.7499px);
+  }
+}
+
+@keyframes anim25 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 50, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-95.89243px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(50, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(28.36622px);
+  }
+}
+
+@keyframes anim26 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 52, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-88.34547px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(52, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(46.85167px);
+  }
+}
+
+@keyframes anim27 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 54, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-77.27645px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(54, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(63.46929px);
+  }
+}
+
+@keyframes anim28 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 56, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-63.12666px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(56, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(77.55659px);
+  }
+}
+
+@keyframes anim29 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 58, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-46.46022px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(58, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(88.55195px);
+  }
+}
+
+@keyframes anim30 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 60, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-27.94155px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(60, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(96.01703px);
+  }
+}
+
+@keyframes anim31 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 62, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-8.30894px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(62, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(99.65421px);
+  }
+}
+
+@keyframes anim32 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 64, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(11.65492px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(64, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(99.31849px);
+  }
+}
+
+@keyframes anim33 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 66, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(31.15414px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(66, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(95.02326px);
+  }
+}
+
+@keyframes anim34 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 68, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(49.41134px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(68, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(86.93975px);
+  }
+}
+
+@keyframes anim35 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 70, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(65.69866px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(70, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(75.39023px);
+  }
+}
+
+@keyframes anim36 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 72, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(79.36679px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(72, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(60.83513px);
+  }
+}
+
+@keyframes anim37 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 74, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(89.87081px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(74, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(43.85473px);
+  }
+}
+
+@keyframes anim38 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 76, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(96.79197px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(76, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(25.12598px);
+  }
+}
+
+@keyframes anim39 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 78, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(99.85433px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(78, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(5.39554px);
+  }
+}
+
+@keyframes anim40 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 80, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(98.93582px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(80, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-14.55px);
+  }
+}
+
+@keyframes anim41 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 82, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(94.07306px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(82, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-33.91549px);
+  }
+}
+
+@keyframes anim42 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 84, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(85.45989px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(84, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-51.92887px);
+  }
+}
+
+@keyframes anim43 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 86, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(73.43971px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(86, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-67.872px);
+  }
+}
+
+@keyframes anim44 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 88, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(58.49172px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(88, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-81.1093px);
+  }
+}
+
+@keyframes anim45 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 90, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(41.21185px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(90, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-91.11303px);
+  }
+}
+
+@keyframes anim46 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 92, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(22.28899px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(92, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-97.48436px);
+  }
+}
+
+@keyframes anim47 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 94, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(2.47754px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(94, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-99.9693px);
+  }
+}
+
+@keyframes anim48 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 96, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-17.43268px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(96, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-98.46879px);
+  }
+}
+
+@keyframes anim49 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 98, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-36.64791px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(98, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-93.04263px);
+  }
+}
+
+@keyframes anim50 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 100, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-54.40211px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(100, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-83.90715px);
+  }
+}
+
+@keyframes anim51 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 102, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-69.98747px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(102, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-71.42657px);
+  }
+}
+
+@keyframes anim52 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 104, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-82.78265px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(104, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-56.09843px);
+  }
+}
+
+@keyframes anim53 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 106, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-92.27754px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(106, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-38.53382px);
+  }
+}
+
+@keyframes anim54 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 108, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-98.09362px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(108, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(-19.43299px);
+  }
+}
+
+@keyframes anim55 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 110, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-99.99902px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(110, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(0.44257px);
+  }
+}
+
+@keyframes anim56 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 112, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-97.91777px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(112, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(20.30049px);
+  }
+}
+
+@keyframes anim57 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 114, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-91.93285px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(114, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(39.34909px);
+  }
+}
+
+@keyframes anim58 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 116, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-82.28286px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(116, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(56.82896px);
+  }
+}
+
+@keyframes anim59 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 118, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-69.35251px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(118, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(72.04325px);
+  }
+}
+
+@keyframes anim60 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 120, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-53.65729px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(120, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(84.3854px);
+  }
+}
+
+@keyframes anim61 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 122, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-35.82293px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(122, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(93.36336px);
+  }
+}
+
+@keyframes anim62 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 124, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(-16.56042px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(124, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(98.61923px);
+  }
+}
+
+@keyframes anim63 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 126, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(3.3623px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(126, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(99.94346px);
+  }
+}
+
+@keyframes anim64 {
+  /* line 46, ../sass/screen.scss */
+  from {
+    width: 1px;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.4);
+    xborder-color: transparent;
+    transform: translateZ(23.15098px);
+  }
+
+  /* line 53, ../sass/screen.scss */
+  to {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.4);
+    xborder-color: #333;
+    transform: translateZ(97.28326px);
+  }
+}
+
+@keyframes rot2 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    transform: rotateX(45deg) rotateZ(-30deg);
+  }
+
+  /* line 67, ../sass/screen.scss */
+  100% {
+    transform: rotateX(45deg) rotateZ(30deg);
+  }
+}
+
+@keyframes rot {
+  /* line 73, ../sass/screen.scss */
+  0% {
+    transform: rotateZ(45deg) rotateY(0deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  50% {
+    transform: rotateZ(65deg) rotateY(30deg);
+  }
+
+  /* line 79, ../sass/screen.scss */
+  100% {
+    transform: rotateZ(45deg);
+  }
+}

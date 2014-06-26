@@ -1,0 +1,70 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Nexa Regular;	
+	color: #fafaff;
+	border-color: red !important;
+}
+
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	background: rgba(192,192,192,0.9);
+	background-image: url('journey.jpg');
+	background-size: cover;
+	background-position: center;
+	-webkit-transform: translateZ(0);
+	-webkit-animation: pan 30s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes pan {
+	from {
+		background-position: left;		
+	}
+	/*50% {
+		background-position: 50% 0%;
+	}*/
+	to {
+		background-position: right;
+	}
+}
+
+
+.inner-border {
+	position: absolute;
+	border: 1rem solid #fef1ca !important;
+	top: 1.5rem;
+	left: 1.5rem;
+	bottom: 1.5rem;
+	right: 1.5rem;
+	padding: 1rem;
+
+}
+
+.bleft {
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 13vmin;
+	margin: 0.3em 0 0.3em;
+	border-bottom: 2px solid;
+	
+}
+
+p {
+	margin: 0.3em 0 0.3em;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}

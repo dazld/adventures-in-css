@@ -1,0 +1,104 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Helvetica Neue";
+	font-weight: 100;
+	color: #fafaff;
+	border-color: red !important;
+}
+
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	background: rgba(192,192,192,0.9);
+}
+
+@-webkit-keyframes pan {
+	from {
+		background-position: left;		
+	}
+	to {
+		background-position: right;
+	}
+}
+
+
+.inner-border {
+	position: absolute;
+	border: 1rem solid rgba(32,32,66,0.3) !important;
+	top: 1.5rem;
+	left: 1.5rem;
+	bottom: 1.5rem;
+	right: 1.5rem;
+	padding: 1rem;
+}
+
+.header {
+	background: red;
+	font-size: 10vmin;
+	line-height: 14vmin;
+	padding: 0 0.3vw;
+	clear: both;
+	-webkit-transition: all 1s linear;
+}
+
+.block {
+	margin: 3vmin 0;
+	padding: 0.3vw 0.3vw;
+	background: green;
+	text-align: center;
+	-webkit-transition: all 1s linear;
+}
+
+
+.footer {
+	background: red;
+	font-size: 10vmin;
+	padding: 0 0.3vw;
+	margin: 1vmin 0;
+	clear: both;
+	line-height: 14vmin;
+	-webkit-transition: all 1s linear;
+}
+
+.block.left:nth-of-type(2n) {
+	margin-right: 2.89vmin;
+	clear: left;
+}
+
+.block.full {
+	clear: right;
+	float: left;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.full {
+	width: 70vmin;
+}
+
+.half {
+	width: 33vmin;
+}
+
+
+h1 {
+	font-weight: 100;
+	font-size: 13vmin;
+	margin: 0.3em 0 0.3em;
+	border-bottom: 2px solid;
+	
+}
+
+p {
+	margin: 0.3em 0 0.3em;
+}
+
