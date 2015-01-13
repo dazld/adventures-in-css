@@ -4,14 +4,11 @@
   "description": "adventures-in-css ================= ```css #adventures {    font-weight:bold;    color:hotpink;  } ```",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "script": "node node_modules/http-server/bin/http-server"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/dazld/adventures-in-css.git"
-  },
-  "scripts":{
-    "server":"node node_modules/http-server/bin/http-server"  
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +17,7 @@
   },
   "homepage": "https://github.com/dazld/adventures-in-css",
   "dependencies": {
+    "gulp": "^3.8.10",
     "http-server": "~0.6.1"
   }
 }

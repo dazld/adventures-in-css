@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ctri</title>
+    <style type="text/css">
+body {
+  background: #333;
+}
+
+#ref {
+  position:absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  height: 300px;
+  width: 200px;
+  background: url(http://upload.wikimedia.org/wikipedia/commons/d/d1/Lichtenberg_color_triangle_Tobias_Mayer_1775.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#compmode {
+  position: absolute; 
+  top: 20px;
+  left: 0;
+}
+
+#rows {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+    
+    </style>
+  </head>
+  <body>
+    <div id="ref"></div>
+    <input type="range" id="rows" min="1" value="4" max="30" step="1">
+    <select id="compmode">
+      <option value="difference">difference</option>
+      <option value="multiply">multiply</option>
+      <option value="screen">screen</option>
+      <option value="overlay">overlay</option>
+      <option value="darken">darken</option>
+      <option value="lighten">lighten</option>
+      <option value="color-dodge" selected>color-dodge</option>
+      <option value="color-burn">color-burn</option>
+      <option value="hard-light">hard-light</option>
+      <option value="soft-light">soft-light</option>
+      <option value="exclusion">exclusion</option>
+      <option value="hue">hue</option>
+      <option value="saturation">saturation</option>
+      <option value="color">color</option>
+      <option value="luminosity">luminosity</option>
+    </select>
+    <script src="ctri.js"></script>
+  </body>
+</html>

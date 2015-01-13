@@ -1,3 +1,4 @@
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var remap = window.r = require('re-map');
 var clog = require('whir-clog');
 var width = window.innerWidth;
@@ -94,3 +95,35 @@ function sketch(){
 }
 
 draw();
+
+},{"re-map":2,"whir-clog":3}],2:[function(require,module,exports){
+/*
+ * re-map
+ * https://github.com/technicolorenvy/re-map
+ *
+ * Copyright (c) 2013 Joseph (Jos) Smith
+ * Licensed under the GNU GENERAL PUBLIC license.
+ */
+
+// @param {Number} value 
+// @param {Number} istart
+// @param {Number} istop
+// @param {Number} ostart
+// @param {Number} ostop
+
+module.exports = function reMap(value, istart, istop, ostart, ostop) {
+  return ostart + (ostop - ostart) * ((value - istart) / (istop - istart));
+};
+},{}],3:[function(require,module,exports){
+module.exports = (function() {
+
+	var startTime = Date.now();
+
+	return function clog() {
+		var logTime = ((Date.now() - startTime) / 1000).toFixed(3) + 's - ';
+		var partialConsole = console.log.bind(console, logTime);
+		return partialConsole.apply(console, arguments);
+	};
+
+})();
+},{}]},{},[1]);
