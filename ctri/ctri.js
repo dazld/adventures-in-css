@@ -37,9 +37,69 @@ function setup(){
   }
 }
 
+
+
+var c1 = [255,0,0];
+var c2 = [0,255,0];
+var c3 = [0,0,255];
+
+var lch = [
+  colorSpace.rgb.hsv(c1),
+  colorSpace.rgb.hsv(c2),
+  colorSpace.rgb.hsv(c3)
+];
+
+function getHue(col){
+  return col[0];
+}
+
+/* 
+http://www.stuartdenman.com/improved-color-blending/
+d = h2 - h1
+if (h1 > h2) then swap(h1, h2), d = -d, f = 1 - f
+if (d > 180) then h1 = h1 + 360, h = ( h1 + f * (h2 - h1) ) mod 360
+if (d <= 180) then h = h1 + f * d
+
+*/
+
+function scale(x,y,max){
+  var fX = x/max;
+  var fY = y/max;
+  var h;
+
+  var hues = [getHue(lch[0]), getHue(lch[1])];
+  // var h3 = getHue(lch[2]);
+  var d =  hues[1] - hues[0];
+  console.log(fX, d,hues)
+  if (hues[0] > hues[1]) {
+    hues.reverse();
+    d = -d;
+    fX = 1 - fX;
+  }
+
+  if (d > 180) {
+    hues[0] += 360;
+    h = ( hues[0] + fX * (hues[1]-hues[0])) % 360;
+  } else if (d <= 180) {
+    h = hues[0] + fX * d;
+  }
+
+  var rgb = colorSpace.hsv.rgb([h, lch[0][1], lch[0][2] ]);
+
+  return getRGBA(rgb);
+  
+
+}
+
+function getRGBA(rgb){
+  return ['rgba(' + rgb[0],rgb[1],rgb[2],'1)'].join();
+}
+
+
 // this is still quite raw, ideally should be scaling
 // between three arbitrary colours
-function scale(x,y,max){
+
+function scale2(x,y,max){
   
   var rX = (x/max);
   var rY = (y/max);
@@ -92,8 +152,8 @@ function drawHexagon(canvasContext, x, y, fill) {
   var fill = fill || false;
 
   canvasContext.beginPath();
-  canvasContext.globalCompositeOperation = 'source-over';
-  canvasContext.globalCompositeOperation = compmode.value;
+  // canvasContext.globalCompositeOperation = 'source-over';
+  // canvasContext.globalCompositeOperation = compmode.value;
   canvasContext.strokeStyle = "rgba(0,0,0,0.5)";
   canvasContext.lineWidth = 1;
   canvasContext.moveTo(x + hexRadius, y);
