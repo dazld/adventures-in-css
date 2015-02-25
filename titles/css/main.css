@@ -1,0 +1,103 @@
+html {
+    min-height: 100%;
+}
+body {
+    background: linear-gradient(#3A3A39 10%, #222 45%);
+    height: 100%;
+}
+ 
+#stage {
+    position: absolute;
+    top: 50vh;
+    left: calc(50vw - 40vw);
+    text-align: center;
+    width: 80vw;
+}
+
+h1 {
+    display: none;
+    font-family: Futura, Helvetica Neue;
+    color: white;
+}
+
+h1.letterified {
+    display: initial;
+}
+
+[data-letter] {
+    position: relative;
+    font-weight: 100;
+    /*display: inline-block;*/
+    margin: 0 4px;
+    left: 0;
+    opacity: 0;
+    -webkit-animation:  2s focus 1s forwards ease-in-out,
+                        
+                        2s blur 5s forwards  ease-in-out,
+                        2s slideright 5s forwards ease-in-out ;
+}
+
+[data-letter="B"], [data-letter="E"], [data-letter="R"], [data-letter="L"], [data-letter="I"], [data-letter="N"]  {
+    font-weight: 300;
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    -webkit-animation: slideleft 1s ease-in-out, fadein 2s ease-in-out, 
+                        2s blur 5s alternate forwards ease-in-out, 
+                        2s slideright 5s forwards ease-in-out  ;
+}
+
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideleft {
+    from {
+        left: -7px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes slideright {
+    from {
+        left: 0px;
+    }
+    to {
+        
+       left: -50px;
+    }
+}
+
+
+@-webkit-keyframes focus {
+    from {
+        opacity: 0;
+        /*color: white;*/
+        -webkit-filter: blur(10px);
+    }
+    to {
+        /*color: black;*/
+        opacity: 1;
+        -webkit-filter: blur(0px);
+    }
+}
+
+@-webkit-keyframes blur {
+    from {
+        /*color: black;*/
+        opacity: 1;
+        -webkit-filter: blur(0px);
+    }
+    to {
+        /*color: white;*/
+        opacity: 0;
+        -webkit-filter: blur(10px);
+    }
+}
